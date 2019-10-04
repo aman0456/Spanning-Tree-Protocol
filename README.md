@@ -1,14 +1,19 @@
 # Spanning-Tree-Protocol
-A protocol followed by a distributed system of network bridges in an extended LAN to agree upon a spanning tree of the extended LAN
+The protocol followed by a distributed system of network bridges in an extended LAN to agree upon a spanning tree of the extended LAN. Originally given by Radia Perlman.
+
 
 ## Code Explanation:
+---
 
-1. configMessage
+1. **Class configMessage**
+
 * Objects of this class represents the configuration messages received and sent by the bridges
 
 * It contains four variables which represent the following values when a bridge sends the message: the bridgeId of the bridge which it assumes is the root, its distance from the root, its bridgeId, the port on which it is sending (which is the LAN name itself)
 
-2. Bridge
+
+2. **Class Bridge**
+
 * Any object of this class simulates a  bridge in the given network topology.
 
 * It contains a map named myPorts whose key is the name of ports and value is a boolean function which indicates whether the port is a designated port or not.
@@ -19,7 +24,10 @@ A protocol followed by a distributed system of network bridges in an extended LA
 
 * It contains various public functions to allow spanningTree.cpp to access the values of private variables and some private functions which are kind of some helper functions used to aid the major functions in their execution.
 
+
+
 ## Algorithm Sketch and Method Design
+---
 
 ### Spanning Tree Formation
 
