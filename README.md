@@ -3,7 +3,6 @@ The protocol followed by a distributed system of network bridges in an extended 
 
 
 ## Code Explanation:
----
 
 1. **Class configMessage**
 
@@ -27,7 +26,6 @@ The protocol followed by a distributed system of network bridges in an extended 
 
 
 ## Algorithm Sketch and Method Design
----
 
 ### Spanning Tree Formation
 
